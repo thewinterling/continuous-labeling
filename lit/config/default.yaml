@@ -1,0 +1,21 @@
+## Training parameters that need to be known for training with keras
+training_parameters:
+    compile:
+        loss: "aaacategorical_crossentropy", 
+        optimizer: "adam",
+        metrics: 
+            - "accuracy"
+    fit:
+        learning_rate: 0.001
+        epochs: 20
+        batch_size: 128
+        validation_split: 0.1
+
+## Method which defines the way new samples (for the manual labeling step)
+## are selected. For documentation, refer to 'experiment.py'.
+# Choose one of 
+# - 'lowest_variance_in_prediction'
+# - ...
+sample_selection_method: "lowest_variance_in_prediction"
+    
+    
