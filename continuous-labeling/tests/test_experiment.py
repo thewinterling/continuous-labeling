@@ -2,8 +2,8 @@
 
 import unittest
 
-from labeling_iteratively.experiment import Experiment
-from tests.test_setup import Setup
+from lit.labeling_iteratively.experiment import Experiment
+from lit.tests.test_setup import Setup
 
 
 class ExperimentTestFixture(unittest.TestCase):
